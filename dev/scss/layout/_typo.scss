@@ -1,0 +1,23 @@
+$font-size-default: rem-calc(14);
+$font-size-small: rem-calc(12);
+$font-size-big: rem-calc(17);
+
+p, span {
+    font-size: $font-size-default;
+}
+
+.small {
+    font-size: $font-size-small;
+}
+
+.big{
+    font-size: $font-size-big;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}

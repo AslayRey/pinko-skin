@@ -1,0 +1,292 @@
+nav {
+    display: flex;
+    color: white;
+    background-color: #000000;
+    position: fixed;
+    height: 50px;
+    right: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu-mini {
+    padding-top: 50px;
+    justify-content: center;
+    padding-bottom: 30px;
+    a {
+        padding-top: 20px;
+        padding-right: 20px;
+        color: #000000;
+    }
+}
+
+.pinko-nav {
+    padding-top: 70px;
+    padding-left: 30%;
+}
+
+.capospalla, .giacche, .abiti, .maglieria, .camicie, .topwear, .pantaloni, .jeans, .gonne, .pinko_for, .treedom, .what_new, .taglia {font-weight: bold;}
+
+.complete {
+    padding-top: 50px;
+}
+
+.size {
+    display: block;
+}
+
+.iscriviti {
+    background-color: #DADADA;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+
+    p {
+        padding-top: 8px;
+        font-size: 20px;
+    }
+
+    .posizione_bottone {
+        padding-left: 30px;
+        padding-top: 5px;
+        text-transform: uppercase;
+    }
+}
+
+.social {
+    margin-top: 10px;
+    justify-content: center;
+    background-color: #DADADA;
+}
+
+.images {
+    background-color: #DADADA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+img {
+    padding-right: 30px;
+}
+
+.secondary {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+.end {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.product-card {
+    .product-image-hover {
+        display: none;
+    }
+
+    &:hover {
+        .product-image{ display: none; }
+        .product-image-hover { display: block; }
+    }
+}
+
+.descrizioni {
+    font-weight: bold;
+}
+
+.base {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+.secondo-select {
+    display: flex;
+}
+
+.primo-select {
+    width: 25%;
+}
+
+.left {
+    padding-top: 14px;
+    width: 50%;
+    a {
+        padding-right: 60px;
+        padding-left: 20px;
+    }
+}
+
+.scritte {
+    display: flex;
+    width: 50%;
+
+    input {
+        width: 40%;
+        margin-right: 50px;
+        margin-top: 5px;
+    }
+
+    a {
+        padding-top: 14px;
+        margin-right: 30px;
+        justify-content: center;
+
+        .shopping {
+            width: 60px;
+            height: 30px;
+        }
+    }
+}
+
+footer {
+    .pinko {
+        background: #000000;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.menu-visible {
+    display: none;
+}
+
+.nomi {
+    display: none;
+}
+
+@media only screen and (max-width: 40.063em) {
+    .icon {
+        padding-top: 15px;
+    }
+    
+    .pinko-nav {
+        display: none;
+    }
+
+    .menu-mini {
+        display: none;
+    }
+
+    .product-image-hover, .product-image{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .complete, .left, .scritte {
+        display: none;
+    }
+    .menu-visible, .nomi {
+        display: block;
+    }
+
+    .nomi {
+        position: absolute;
+        top: 15px;
+    }
+
+    .nomi a {
+        display: inline;
+        color: #000000;
+        padding-right: 100%;
+    }
+
+    .none {
+        display: none;
+    }
+    
+    .nav.responsive .left{
+        display: block;  
+        position: absolute;
+        left: 0px;      
+        margin-top: 50px;
+        padding-top: 100%;
+        padding-right: 100%;
+        background: #FFFFFF;
+        color: black;
+        padding-bottom: 100%;
+    }
+
+    .nav.responsive .scritte{
+        display: flex;
+    }
+
+    .images {
+        display: none;
+    }
+
+    .siamo, .store {
+        display: none;
+    }
+
+    .secondo-select {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .icon {
+        padding-top: 15px;
+    }
+
+    .pinko-nav {
+        display: none;
+    }
+    
+    .left, .scritte {
+        display: none;
+    }
+    .menu-visible, .nomi {
+        display: block;
+    }
+
+    .nomi {
+        position: absolute;
+        top: 15px;
+    }
+
+    .nomi a {
+        color: #000000;
+        padding-right: 200px;
+    }
+
+    .none {
+        display: none;
+    }
+    
+    .nav.responsive .left{
+        display: block;  
+        position: absolute;
+        left: 0px;      
+        margin-top: 50px;
+        padding-top: 100%;
+        padding-right: 100%;
+        background: #FFFFFF;
+        color: black;
+        padding-bottom: 100%;
+    }
+
+    .nav.responsive .scritte{
+        display: flex;
+        margin-left: 400px;
+
+        .login {
+            display: none;
+        }
+        
+        img {
+            margin-left: 200px;
+        }
+    }
+}
