@@ -12,6 +12,7 @@
                             <div class="left uppercase" >
                             <div class="nomi">
                             <a>Shop By Mood</a>
+                            <a>援助</a>
                             <a>Abbigliamento</a>
                             <a>Accessori</a>
                             <a>Pinko Up</a>
@@ -123,12 +124,12 @@
                         <div class="grid-x">
                             <div class="cell large-4 large-offset-8  primo-select">
                             <p class="uppercase">Ordina per:</p>
-                            <select>
-                                <option>Seleziona un'opzione</option>
-                                <option>Prezzo dal più basso al più alto</option>
-                                <option>Prezzo dal più alto al più basso</option>    
-                                <option>I più cercati</option>
-                                <option>I più venduti</option>
+                            <select id="top">
+                                <option value="deafult">Seleziona un'opzione</option>
+                                <option value="2">Prezzo dal più basso al più alto</option>
+                                <option value="3">Prezzo dal più alto al più basso</option>    
+                                <option value="4">I più cercati</option>
+                                <option value="5">I più venduti</option>
                             </select>
                         </div><div class="cell">
                                 <div class="grid-x grid-margin-x grid-margin-y uppercase">
@@ -279,7 +280,8 @@
                         x.className = "nav";
                     }
                 }
-                </script>
+            </script>
+            <script src="js/select.js"></script>
     </body>
 </html>
 
